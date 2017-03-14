@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
     @IBOutlet weak var statePicker: UIPickerView!
     
     @IBOutlet weak var statePickerBtn: UIButton!
@@ -28,8 +31,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             view.isHidden = true
             successImage.isHidden = false
         }
+    }
+    
         
-       
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBOutlet weak var successImage: UIImageView!
