@@ -8,10 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate  {
     
-    @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    
+    @IBOutlet weak var cityTextField: UITextField!
     
     @IBOutlet weak var statePicker: UIPickerView!
     
@@ -27,17 +31,24 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBAction func buyNowBtn(_ sender: Any) {
         
+        if (nameTextField.text?.isEmpty)! || (addressTextField.text?.isEmpty)! || (cityTextField.text?.isEmpty)! || (countryText.text?.isEmpty)! || (zipCodeText.text?.isEmpty)! {
+            let alert = UIAlertController(title: "Alert", message: "Please enter all your details to continue", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else {
+        
         for view in self.view.subviews as [UIView] {
             view.isHidden = true
             successImage.isHidden = false
         }
     }
-    
-        
+ }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
     
     @IBOutlet weak var successImage: UIImageView!
     
@@ -48,6 +59,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePicker.dataSource = self
         statePicker.delegate = self
         successImage.isHidden = true
+        nameTextField.delegate = self
+        addressTextField.delegate = self
+        cityTextField.delegate = self
+        countryText.delegate = self
+        zipCodeText.delegate = self
         statePickerBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
     }
 
@@ -78,11 +94,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
 
     @IBAction func stateBtnPressed(_ sender: Any) {
+        
         statePicker.isHidden = false
         countryLabel.isHidden = true
         countryText.isHidden = true
         zipCodeLabel.isHidden = true
         zipCodeText.isHidden = true
+        
     }
 
 }
