@@ -7,29 +7,61 @@
 //
 
 import UIKit
+import Alamofire
 
-class ComposeVC: UIViewController {
+class ComposeVC: UIViewController, UITextFieldDelegate {
+    
+    var testUser = User()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.emailTextField.delegate = self
+        self.titleTextField.delegate = self
+        self.composeMsgTextView.delegate = self as? UITextViewDelegate
 
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+
+        
     }
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var titleTextField: UITextField!
 
+    @IBOutlet weak var composeMsgTextView: UITextView!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func sendMsgBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        sendMsg()
+    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func sendMsg() {
+        let parameter = ["title": titleTextField.text!, "body": composeMsgTextView.text!,"receiver": emailTextField.text!]
+            Alamofire.request("https://iostest.bixly.com/messages/",method: .post, parameters: parameter, encoding: URLEncoding.default).responseJSON { response in
+                //UserManager.userInstance.getUser
+                let results = response.result
+                if let dict = results.value as? Dictionary<String,AnyObject> {
+                    UserManager.userInstance.getUser
+                    print(dict)
+                    if let data = dict["data"] as? String {
+                        print(data)
+                    }
+                }
+        }
     }
-    */
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    func hideKeyboard() {
+        view.endEditing(true)
+    }
 }
+

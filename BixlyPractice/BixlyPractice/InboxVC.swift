@@ -9,9 +9,12 @@
 import UIKit
 import Alamofire
 
-class InvoxVC: UIViewController {
+class InboxVC: UIViewController {
 
-    override func viewDidLoad() {
+    @IBAction func clickToComposeMsg(_ sender: Any) {
+        performSegue(withIdentifier: "composeMsg", sender: self)
+    }
+        override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

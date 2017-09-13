@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		8BCA37821F2AAF0600938861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCA37811F2AAF0600938861 /* AppDelegate.swift */; };
-		8BCA37841F2AAF0600938861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCA37831F2AAF0600938861 /* ViewController.swift */; };
+		8BCA37841F2AAF0600938861 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCA37831F2AAF0600938861 /* LoginVC.swift */; };
 		8BCA37871F2AAF0600938861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCA37851F2AAF0600938861 /* Main.storyboard */; };
 		8BCA37891F2AAF0600938861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCA37881F2AAF0600938861 /* Assets.xcassets */; };
 		8BCA378C1F2AAF0600938861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCA378A1F2AAF0600938861 /* LaunchScreen.storyboard */; };
+		8BCA37961F2AEE9400938861 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCA37951F2AEE9400938861 /* MainVC.swift */; };
+		8BCA37981F2B97D900938861 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCA37971F2B97D900938861 /* User.swift */; };
+		8BCA379A1F2BA30000938861 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCA37991F2BA30000938861 /* UserManager.swift */; };
+		8BFCF0D51F329DCA00937964 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCF0D41F329DCA00937964 /* InboxVC.swift */; };
+		8BFCF0D71F329DD900937964 /* SentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCF0D61F329DD900937964 /* SentVC.swift */; };
+		8BFCF0D91F329DEA00937964 /* ComposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCF0D81F329DEA00937964 /* ComposeVC.swift */; };
+		8D5C140F017A7982C268DA36 /* Pods_BixlyPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACD9383BECDD71CF1384C2C /* Pods_BixlyPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8BCA377E1F2AAF0600938861 /* BixlyPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BixlyPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCA37811F2AAF0600938861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BCA37831F2AAF0600938861 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BCA37831F2AAF0600938861 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8BCA37861F2AAF0600938861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BCA37881F2AAF0600938861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BCA378B1F2AAF0600938861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BCA378D1F2AAF0600938861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCA37951F2AEE9400938861 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ../MainVC.swift; sourceTree = "<group>"; };
+		8BCA37971F2B97D900938861 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BCA37991F2BA30000938861 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		8BFCF0D41F329DCA00937964 /* InboxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
+		8BFCF0D61F329DD900937964 /* SentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentVC.swift; sourceTree = "<group>"; };
+		8BFCF0D81F329DEA00937964 /* ComposeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeVC.swift; sourceTree = "<group>"; };
+		A796D90CF73919851E3B8565 /* Pods-BixlyPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BixlyPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-BixlyPractice/Pods-BixlyPractice.release.xcconfig"; sourceTree = "<group>"; };
+		D157DDCEB6B550EE934E302E /* Pods-BixlyPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BixlyPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BixlyPractice/Pods-BixlyPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		EACD9383BECDD71CF1384C2C /* Pods_BixlyPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BixlyPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5C140F017A7982C268DA36 /* Pods_BixlyPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AA52FA243F585E122779E18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D157DDCEB6B550EE934E302E /* Pods-BixlyPractice.debug.xcconfig */,
+				A796D90CF73919851E3B8565 /* Pods-BixlyPractice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8BCA37751F2AAF0600938861 = {
 			isa = PBXGroup;
 			children = (
 				8BCA37801F2AAF0600938861 /* BixlyPractice */,
 				8BCA377F1F2AAF0600938861 /* Products */,
+				6AA52FA243F585E122779E18 /* Pods */,
+				FEC5BC8A8A81690C7A2FA536 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +83,35 @@
 			isa = PBXGroup;
 			children = (
 				8BCA37811F2AAF0600938861 /* AppDelegate.swift */,
-				8BCA37831F2AAF0600938861 /* ViewController.swift */,
+				8BFCF0DA1F329E0200937964 /* View Controller */,
+				8BCA37971F2B97D900938861 /* User.swift */,
+				8BCA37991F2BA30000938861 /* UserManager.swift */,
 				8BCA37851F2AAF0600938861 /* Main.storyboard */,
 				8BCA37881F2AAF0600938861 /* Assets.xcassets */,
 				8BCA378A1F2AAF0600938861 /* LaunchScreen.storyboard */,
 				8BCA378D1F2AAF0600938861 /* Info.plist */,
 			);
 			path = BixlyPractice;
+			sourceTree = "<group>";
+		};
+		8BFCF0DA1F329E0200937964 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BCA37831F2AAF0600938861 /* LoginVC.swift */,
+				8BCA37951F2AEE9400938861 /* MainVC.swift */,
+				8BFCF0D41F329DCA00937964 /* InboxVC.swift */,
+				8BFCF0D61F329DD900937964 /* SentVC.swift */,
+				8BFCF0D81F329DEA00937964 /* ComposeVC.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		FEC5BC8A8A81690C7A2FA536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EACD9383BECDD71CF1384C2C /* Pods_BixlyPractice.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BCA37901F2AAF0600938861 /* Build configuration list for PBXNativeTarget "BixlyPractice" */;
 			buildPhases = (
+				EBDAB5F6CB4B8699F5106E57 /* [CP] Check Pods Manifest.lock */,
 				8BCA377A1F2AAF0600938861 /* Sources */,
 				8BCA377B1F2AAF0600938861 /* Frameworks */,
 				8BCA377C1F2AAF0600938861 /* Resources */,
+				BC05EC40940CD4A427E15D60 /* [CP] Embed Pods Frameworks */,
+				8A433962C0E7706B6B6680EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +151,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2UZ38CNUHD;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -132,13 +190,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A433962C0E7706B6B6680EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BixlyPractice/Pods-BixlyPractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC05EC40940CD4A427E15D60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BixlyPractice/Pods-BixlyPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBDAB5F6CB4B8699F5106E57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BCA377A1F2AAF0600938861 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCA37841F2AAF0600938861 /* ViewController.swift in Sources */,
+				8BCA37981F2B97D900938861 /* User.swift in Sources */,
+				8BFCF0D91F329DEA00937964 /* ComposeVC.swift in Sources */,
+				8BCA37841F2AAF0600938861 /* LoginVC.swift in Sources */,
+				8BCA37961F2AEE9400938861 /* MainVC.swift in Sources */,
+				8BCA379A1F2BA30000938861 /* UserManager.swift in Sources */,
 				8BCA37821F2AAF0600938861 /* AppDelegate.swift in Sources */,
+				8BFCF0D51F329DCA00937964 /* InboxVC.swift in Sources */,
+				8BFCF0D71F329DD900937964 /* SentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +371,7 @@
 		};
 		8BCA37911F2AAF0600938861 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D157DDCEB6B550EE934E302E /* Pods-BixlyPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2UZ38CNUHD;
@@ -272,6 +385,7 @@
 		};
 		8BCA37921F2AAF0600938861 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A796D90CF73919851E3B8565 /* Pods-BixlyPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2UZ38CNUHD;
@@ -302,6 +416,7 @@
 				8BCA37921F2AAF0600938861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

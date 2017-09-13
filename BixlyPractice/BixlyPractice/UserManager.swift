@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+
+class UserManager {
+    
+    static let userInstance = UserManager()
+    
+    var _user = User()
+    
+    
+    private init() { }
+
+    var getUser: User {
+        return _user
+    }
+    
+    func setUser( user: User) -> Void {
+        self._user = user
+    }
+    
+}
