@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>159496488932-ls65gd4ei6sjcosi1k339dnhav07cqnb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159496488932-ls65gd4ei6sjcosi1k339dnhav07cqnb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCzeZCdgw6F_NRZXjres5fQgfwrGV72edE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>159496488932</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dhruvingajjar.focusFirebaseChallenge</string>
+	<key>PROJECT_ID</key>
+	<string>focusfiredbchallenge</string>
+	<key>STORAGE_BUCKET</key>
+	<string>focusfiredbchallenge.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:159496488932:ios:20751174644251fc</string>
+	<key>DATABASE_URL</key>
+	<string>https://focusfiredbchallenge.firebaseio.com</string>
+</dict>
+</plist>

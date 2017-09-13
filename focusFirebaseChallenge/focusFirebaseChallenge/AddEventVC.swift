@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class AddEventVC: UIViewController, UITextFieldDelegate {
 
+    var refEvents: DatabaseReference!
+    
     var event: Event? = nil
     var titleText = "Add Event"
     var indexPathForEvent: IndexPath? = nil
@@ -24,6 +27,9 @@ class AddEventVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refEvents = Database.database().reference().child("events")
+        
         titleLbl.text = titleText
         self.nameTextField.delegate = self
         self.priceTextField.delegate = self
@@ -31,14 +37,26 @@ class AddEventVC: UIViewController, UITextFieldDelegate {
         //set current date and time as minimum date for the picker
         datePicker.minimumDate = NSDate() as Date
         datePicker.locale = NSLocale.current
-        
+        /*
         if let event = event {
             nameTextField.text = event.name
             priceTextField.text = event.price
             addressTextField.text = event.address
-        }
+        }*/
         
         
+    }
+    @IBAction func save(_ sender: UIBarButtonItem) {
+        addEvents()
+    }
+    
+    func addEvents() {
+        let key = refEvents.childByAutoId().key
+        
+        let events = ["id": key, "eventName": nameTextField.text! as String, "eventPrice": priceTextField.text! as String, "eventAddress": addressTextField.text! as String]
+        
+        refEvents.child(key).setValue(events)
+        titleLbl.text = "Event Added"
     }
 
     override func didReceiveMemoryWarning() {

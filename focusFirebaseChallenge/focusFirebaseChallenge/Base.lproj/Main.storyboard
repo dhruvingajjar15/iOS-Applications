@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FVU-sh-QOU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FVU-sh-QOU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <deployment identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +15,7 @@
         <scene sceneID="Ot4-vV-0Ro">
             <objects>
                 <tableViewController id="EII-Ma-ZZ6" customClass="EventTableVC" customModule="focusFirebaseChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YcS-wo-568">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YcS-wo-568">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,7 +97,11 @@
         <scene sceneID="cgi-Ll-ObD">
             <objects>
                 <viewController id="Reb-Fd-wIx" customClass="AddEventVC" customModule="focusFirebaseChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="ieJ-3z-veK">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cOZ-va-DOb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2wv-XJ-S3G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ieJ-3z-veK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -165,21 +170,20 @@
                             <constraint firstItem="rNe-9V-GRr" firstAttribute="centerX" secondItem="ieJ-3z-veK" secondAttribute="centerX" id="VFd-aF-jls"/>
                             <constraint firstItem="rNe-9V-GRr" firstAttribute="top" secondItem="Ce0-zo-xLm" secondAttribute="bottom" constant="8" id="WrH-fr-t4S"/>
                             <constraint firstItem="Tx1-M2-yoX" firstAttribute="top" secondItem="aK6-hC-mIS" secondAttribute="bottom" constant="16" id="aBa-R8-WJG"/>
-                            <constraint firstItem="M73-CS-vTC" firstAttribute="trailing" secondItem="rNe-9V-GRr" secondAttribute="trailing" constant="16" id="aeH-sc-2Ll"/>
-                            <constraint firstItem="cfi-Hd-rAo" firstAttribute="leading" secondItem="M73-CS-vTC" secondAttribute="leading" constant="16" id="b2x-sW-IJG"/>
-                            <constraint firstItem="rNe-9V-GRr" firstAttribute="leading" secondItem="M73-CS-vTC" secondAttribute="leading" constant="16" id="eQy-uP-HFT"/>
-                            <constraint firstItem="M73-CS-vTC" firstAttribute="trailing" secondItem="aK6-hC-mIS" secondAttribute="trailing" constant="16" id="hSX-n0-AZA"/>
+                            <constraint firstAttribute="trailing" secondItem="rNe-9V-GRr" secondAttribute="trailing" constant="16" id="aeH-sc-2Ll"/>
+                            <constraint firstItem="cfi-Hd-rAo" firstAttribute="leading" secondItem="ieJ-3z-veK" secondAttribute="leading" constant="16" id="b2x-sW-IJG"/>
+                            <constraint firstItem="rNe-9V-GRr" firstAttribute="leading" secondItem="ieJ-3z-veK" secondAttribute="leading" constant="16" id="eQy-uP-HFT"/>
+                            <constraint firstAttribute="trailing" secondItem="aK6-hC-mIS" secondAttribute="trailing" constant="16" id="hSX-n0-AZA"/>
                             <constraint firstItem="cfi-Hd-rAo" firstAttribute="centerX" secondItem="ieJ-3z-veK" secondAttribute="centerX" id="liP-rP-A64"/>
-                            <constraint firstItem="Tx1-M2-yoX" firstAttribute="leading" secondItem="M73-CS-vTC" secondAttribute="leading" constant="16" id="llL-xl-XTk"/>
-                            <constraint firstItem="cfi-Hd-rAo" firstAttribute="top" secondItem="M73-CS-vTC" secondAttribute="top" id="ppv-XL-zYH"/>
-                            <constraint firstItem="aK6-hC-mIS" firstAttribute="leading" secondItem="M73-CS-vTC" secondAttribute="leading" constant="16" id="sdV-Nw-gky"/>
-                            <constraint firstItem="M73-CS-vTC" firstAttribute="trailing" secondItem="gt0-s9-eCv" secondAttribute="trailing" constant="27.5" id="txw-dh-yTv"/>
-                            <constraint firstItem="M73-CS-vTC" firstAttribute="trailing" secondItem="cfi-Hd-rAo" secondAttribute="trailing" constant="16" id="urA-V9-Jx2"/>
+                            <constraint firstItem="Tx1-M2-yoX" firstAttribute="leading" secondItem="ieJ-3z-veK" secondAttribute="leading" constant="16" id="llL-xl-XTk"/>
+                            <constraint firstItem="cfi-Hd-rAo" firstAttribute="top" secondItem="cOZ-va-DOb" secondAttribute="bottom" id="ppv-XL-zYH"/>
+                            <constraint firstItem="aK6-hC-mIS" firstAttribute="leading" secondItem="ieJ-3z-veK" secondAttribute="leading" constant="16" id="sdV-Nw-gky"/>
+                            <constraint firstAttribute="trailing" secondItem="gt0-s9-eCv" secondAttribute="trailing" constant="27.5" id="txw-dh-yTv"/>
+                            <constraint firstAttribute="trailing" secondItem="cfi-Hd-rAo" secondAttribute="trailing" constant="16" id="urA-V9-Jx2"/>
                             <constraint firstItem="aK6-hC-mIS" firstAttribute="top" secondItem="rNe-9V-GRr" secondAttribute="bottom" constant="14" id="wQo-yK-naH"/>
-                            <constraint firstItem="M73-CS-vTC" firstAttribute="trailing" secondItem="Tx1-M2-yoX" secondAttribute="trailing" constant="16" id="xIk-5k-h2E"/>
-                            <constraint firstItem="gt0-s9-eCv" firstAttribute="leading" secondItem="M73-CS-vTC" secondAttribute="leading" constant="27.5" id="yWx-5q-jXj"/>
+                            <constraint firstAttribute="trailing" secondItem="Tx1-M2-yoX" secondAttribute="trailing" constant="16" id="xIk-5k-h2E"/>
+                            <constraint firstItem="gt0-s9-eCv" firstAttribute="leading" secondItem="ieJ-3z-veK" secondAttribute="leading" constant="27.5" id="yWx-5q-jXj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="M73-CS-vTC"/>
                     </view>
                     <navigationItem key="navigationItem" id="uMF-SQ-rXV">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tpe-vi-Ueo">
@@ -189,6 +193,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="mFe-JS-lbF">
                             <connections>
+                                <action selector="save:" destination="Reb-Fd-wIx" id="2IM-qk-nzd"/>
                                 <segue destination="TCQ-EC-iP8" kind="unwind" identifier="" unwindAction="unwindToEventListWithSender:" id="GZ7-Fw-B5D"/>
                             </connections>
                         </barButtonItem>
@@ -212,7 +217,11 @@
         <scene sceneID="dpz-rQ-Bj0">
             <objects>
                 <viewController id="HQB-Jk-nCg" customClass="EventDetailVC" customModule="focusFirebaseChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="UMM-6e-5wx">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5QE-rU-EWT"/>
+                        <viewControllerLayoutGuide type="bottom" id="FyL-ju-YY8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UMM-6e-5wx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -263,25 +272,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Qdr-2y-ZPn" firstAttribute="top" secondItem="cpx-6F-AZs" secondAttribute="bottom" constant="8" id="5Re-Hz-uIv"/>
-                            <constraint firstItem="nmb-Mu-dGG" firstAttribute="trailing" secondItem="cpx-6F-AZs" secondAttribute="trailing" constant="16" id="BW5-EN-WjU"/>
+                            <constraint firstAttribute="trailing" secondItem="cpx-6F-AZs" secondAttribute="trailing" constant="16" id="BW5-EN-WjU"/>
                             <constraint firstItem="cpx-6F-AZs" firstAttribute="centerX" secondItem="UMM-6e-5wx" secondAttribute="centerX" id="DUn-yC-9aL"/>
                             <constraint firstItem="cpx-6F-AZs" firstAttribute="top" secondItem="L1C-hu-n2h" secondAttribute="bottom" constant="8" id="Lg1-OK-Ovc"/>
-                            <constraint firstItem="Qdr-2y-ZPn" firstAttribute="leading" secondItem="nmb-Mu-dGG" secondAttribute="leading" constant="16" id="QL4-yv-6cM"/>
-                            <constraint firstItem="hJt-Mm-69m" firstAttribute="top" secondItem="nmb-Mu-dGG" secondAttribute="top" constant="22" id="V9c-eN-bir"/>
-                            <constraint firstItem="cpx-6F-AZs" firstAttribute="leading" secondItem="nmb-Mu-dGG" secondAttribute="leading" constant="16" id="bK9-LY-swX"/>
+                            <constraint firstItem="Qdr-2y-ZPn" firstAttribute="leading" secondItem="UMM-6e-5wx" secondAttribute="leading" constant="16" id="QL4-yv-6cM"/>
+                            <constraint firstItem="hJt-Mm-69m" firstAttribute="top" secondItem="5QE-rU-EWT" secondAttribute="bottom" constant="22" id="V9c-eN-bir"/>
+                            <constraint firstItem="cpx-6F-AZs" firstAttribute="leading" secondItem="UMM-6e-5wx" secondAttribute="leading" constant="16" id="bK9-LY-swX"/>
                             <constraint firstItem="59E-qx-Bnv" firstAttribute="centerX" secondItem="UMM-6e-5wx" secondAttribute="centerX" id="dR9-TW-I9i"/>
                             <constraint firstItem="hJt-Mm-69m" firstAttribute="centerX" secondItem="UMM-6e-5wx" secondAttribute="centerX" id="g7O-GL-Rr5"/>
                             <constraint firstItem="L1C-hu-n2h" firstAttribute="top" secondItem="hJt-Mm-69m" secondAttribute="bottom" constant="22" id="i2K-B3-DZl"/>
                             <constraint firstItem="59E-qx-Bnv" firstAttribute="top" secondItem="Qdr-2y-ZPn" secondAttribute="bottom" constant="8" id="kSh-ft-GIi"/>
-                            <constraint firstItem="nmb-Mu-dGG" firstAttribute="trailing" secondItem="59E-qx-Bnv" secondAttribute="trailing" constant="16" id="kZ0-ai-JM1"/>
-                            <constraint firstItem="nmb-Mu-dGG" firstAttribute="trailing" secondItem="Qdr-2y-ZPn" secondAttribute="trailing" constant="16" id="kkW-Nb-p8X"/>
+                            <constraint firstAttribute="trailing" secondItem="59E-qx-Bnv" secondAttribute="trailing" constant="16" id="kZ0-ai-JM1"/>
+                            <constraint firstAttribute="trailing" secondItem="Qdr-2y-ZPn" secondAttribute="trailing" constant="16" id="kkW-Nb-p8X"/>
                             <constraint firstItem="Qdr-2y-ZPn" firstAttribute="centerX" secondItem="UMM-6e-5wx" secondAttribute="centerX" id="lDk-sE-mG9"/>
-                            <constraint firstItem="L1C-hu-n2h" firstAttribute="leading" secondItem="nmb-Mu-dGG" secondAttribute="leading" constant="16" id="vZE-Bw-rDO"/>
+                            <constraint firstItem="L1C-hu-n2h" firstAttribute="leading" secondItem="UMM-6e-5wx" secondAttribute="leading" constant="16" id="vZE-Bw-rDO"/>
                             <constraint firstItem="L1C-hu-n2h" firstAttribute="centerX" secondItem="UMM-6e-5wx" secondAttribute="centerX" id="vuq-yy-flq"/>
-                            <constraint firstItem="nmb-Mu-dGG" firstAttribute="trailing" secondItem="L1C-hu-n2h" secondAttribute="trailing" constant="16" id="wq3-Rf-Dgj"/>
-                            <constraint firstItem="59E-qx-Bnv" firstAttribute="leading" secondItem="nmb-Mu-dGG" secondAttribute="leading" constant="16" id="xQH-iC-sff"/>
+                            <constraint firstAttribute="trailing" secondItem="L1C-hu-n2h" secondAttribute="trailing" constant="16" id="wq3-Rf-Dgj"/>
+                            <constraint firstItem="59E-qx-Bnv" firstAttribute="leading" secondItem="UMM-6e-5wx" secondAttribute="leading" constant="16" id="xQH-iC-sff"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nmb-Mu-dGG"/>
                     </view>
                     <navigationItem key="navigationItem" id="xYU-UC-FfF">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="ngW-UE-oJ5">

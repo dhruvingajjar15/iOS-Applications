@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jBq-Nq-97e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jBq-Nq-97e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -97,6 +97,10 @@
         <scene sceneID="1Pe-8n-dvd">
             <objects>
                 <viewController id="HJn-c0-oGE" customClass="PlayerDetailVC" customModule="focusSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DLQ-HY-KfN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gdn-8k-hjq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="Hqx-pX-0bi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,19 +198,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0vY-ED-gf1" firstAttribute="top" secondItem="WyR-lf-e2c" secondAttribute="top" id="1IS-9S-3ux"/>
+                            <constraint firstItem="0vY-ED-gf1" firstAttribute="top" secondItem="DLQ-HY-KfN" secondAttribute="bottom" id="1IS-9S-3ux"/>
                             <constraint firstItem="AUl-XE-H0G" firstAttribute="top" secondItem="C3y-Qg-IbI" secondAttribute="bottom" constant="62" id="Kim-iq-PdQ"/>
                             <constraint firstItem="0vY-ED-gf1" firstAttribute="centerX" secondItem="Hqx-pX-0bi" secondAttribute="centerX" id="LB5-Zv-fob"/>
                             <constraint firstItem="C3y-Qg-IbI" firstAttribute="leading" secondItem="Nmd-cf-95t" secondAttribute="trailing" constant="13.5" id="Maw-8m-XsD"/>
-                            <constraint firstItem="Nmd-cf-95t" firstAttribute="top" secondItem="WyR-lf-e2c" secondAttribute="top" constant="53" id="SHy-Av-enA"/>
+                            <constraint firstItem="Nmd-cf-95t" firstAttribute="top" secondItem="DLQ-HY-KfN" secondAttribute="bottom" constant="53" id="SHy-Av-enA"/>
                             <constraint firstItem="AUl-XE-H0G" firstAttribute="centerX" secondItem="Hqx-pX-0bi" secondAttribute="centerX" id="Smr-0c-8yi"/>
-                            <constraint firstItem="AUl-XE-H0G" firstAttribute="leading" secondItem="WyR-lf-e2c" secondAttribute="leading" constant="137" id="aFh-Hs-oIf"/>
+                            <constraint firstItem="AUl-XE-H0G" firstAttribute="leading" secondItem="Hqx-pX-0bi" secondAttribute="leading" constant="137" id="aFh-Hs-oIf"/>
                             <constraint firstItem="C3y-Qg-IbI" firstAttribute="top" secondItem="0vY-ED-gf1" secondAttribute="bottom" constant="32" id="lOM-Fg-Pfc"/>
-                            <constraint firstItem="Nmd-cf-95t" firstAttribute="leading" secondItem="WyR-lf-e2c" secondAttribute="leading" constant="16" id="ocf-8d-TbY"/>
-                            <constraint firstItem="WyR-lf-e2c" firstAttribute="trailing" secondItem="C3y-Qg-IbI" secondAttribute="trailing" constant="165" id="qXd-4b-G5T"/>
-                            <constraint firstItem="WyR-lf-e2c" firstAttribute="trailing" secondItem="AUl-XE-H0G" secondAttribute="trailing" constant="138" id="v5q-TO-8Pb"/>
+                            <constraint firstItem="Nmd-cf-95t" firstAttribute="leading" secondItem="Hqx-pX-0bi" secondAttribute="leading" constant="16" id="ocf-8d-TbY"/>
+                            <constraint firstAttribute="trailing" secondItem="C3y-Qg-IbI" secondAttribute="trailing" constant="165" id="qXd-4b-G5T"/>
+                            <constraint firstAttribute="trailing" secondItem="AUl-XE-H0G" secondAttribute="trailing" constant="138" id="v5q-TO-8Pb"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="WyR-lf-e2c"/>
                     </view>
                     <navigationItem key="navigationItem" id="ouT-Uj-A3p">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="VVm-eh-zAv">
@@ -238,6 +241,10 @@
         <scene sceneID="EAR-am-frp">
             <objects>
                 <viewController id="aIe-su-D7M" customClass="AddPlayerVC" customModule="focusSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JdX-mb-OaW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ej7-gy-kFo"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="GeQ-aV-Tcc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,13 +346,12 @@
                             <constraint firstItem="jUU-cS-eHO" firstAttribute="centerX" secondItem="GeQ-aV-Tcc" secondAttribute="centerX" id="38t-Ao-96E"/>
                             <constraint firstItem="CEw-5y-cza" firstAttribute="centerX" secondItem="GeQ-aV-Tcc" secondAttribute="centerX" id="5mR-en-TA9"/>
                             <constraint firstItem="gox-To-cf7" firstAttribute="centerX" secondItem="GeQ-aV-Tcc" secondAttribute="centerX" id="FMg-pa-JbW"/>
-                            <constraint firstItem="GWD-dI-ICV" firstAttribute="trailing" secondItem="gox-To-cf7" secondAttribute="trailing" constant="27.5" id="Fgd-tB-qJG"/>
-                            <constraint firstItem="gox-To-cf7" firstAttribute="leading" secondItem="GWD-dI-ICV" secondAttribute="leading" constant="27.5" id="FyK-dj-njI"/>
-                            <constraint firstItem="jUU-cS-eHO" firstAttribute="top" secondItem="GWD-dI-ICV" secondAttribute="top" id="HTb-CK-z3S"/>
+                            <constraint firstAttribute="trailing" secondItem="gox-To-cf7" secondAttribute="trailing" constant="27.5" id="Fgd-tB-qJG"/>
+                            <constraint firstItem="gox-To-cf7" firstAttribute="leading" secondItem="GeQ-aV-Tcc" secondAttribute="leading" constant="27.5" id="FyK-dj-njI"/>
+                            <constraint firstItem="jUU-cS-eHO" firstAttribute="top" secondItem="JdX-mb-OaW" secondAttribute="bottom" id="HTb-CK-z3S"/>
                             <constraint firstItem="CEw-5y-cza" firstAttribute="top" secondItem="gox-To-cf7" secondAttribute="bottom" constant="8" id="StX-2O-bqV"/>
                             <constraint firstItem="gox-To-cf7" firstAttribute="top" secondItem="jUU-cS-eHO" secondAttribute="bottom" constant="8" id="cDU-Ib-4wY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="GWD-dI-ICV"/>
                     </view>
                     <connections>
                         <outlet property="ageText" destination="XeP-G4-bRx" id="eff-8K-Mue"/>

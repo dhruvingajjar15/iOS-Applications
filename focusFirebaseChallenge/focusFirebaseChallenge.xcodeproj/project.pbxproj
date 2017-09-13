@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F8AF1DD40EF7A47E9FDD6F1 /* Pods_focusFirebaseChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B25D2B09572882242D4422 /* Pods_focusFirebaseChallenge.framework */; };
 		8B2D0BF81F18013F00F52AED /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2D0BF71F18013F00F52AED /* AddEventVC.swift */; };
 		8B2D0BFA1F180A0100F52AED /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2D0BF91F180A0100F52AED /* Event.swift */; };
 		8B2D0BFC1F1829A500F52AED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2D0BFB1F1829A500F52AED /* CustomTableViewCell.swift */; };
 		8B7415BF1F187C4300F7EDC2 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7415BE1F187C4300F7EDC2 /* EventDetailVC.swift */; };
+		8BA4BCED1F1AC68600A019BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BA4BCEC1F1AC68600A019BE /* GoogleService-Info.plist */; };
 		8BD7FDFC1F17F25400B74E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7FDFB1F17F25400B74E20 /* AppDelegate.swift */; };
 		8BD7FE011F17F25400B74E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD7FDFF1F17F25400B74E20 /* Main.storyboard */; };
 		8BD7FE031F17F25400B74E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD7FE021F17F25400B74E20 /* Assets.xcassets */; };
@@ -19,10 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62AF1E5922360C6FFD8E0A3E /* Pods-focusFirebaseChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-focusFirebaseChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-focusFirebaseChallenge/Pods-focusFirebaseChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8B2D0BF71F18013F00F52AED /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 		8B2D0BF91F180A0100F52AED /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8B2D0BFB1F1829A500F52AED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		8B7415BE1F187C4300F7EDC2 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		8BA4BCEC1F1AC68600A019BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8BD7FDF81F17F25400B74E20 /* focusFirebaseChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = focusFirebaseChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD7FDFB1F17F25400B74E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD7FE001F17F25400B74E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		8BD7FE051F17F25400B74E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BD7FE071F17F25400B74E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BD7FE0D1F17F96500B74E20 /* EventTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableVC.swift; sourceTree = "<group>"; };
+		E12C5009C294319D41A17384 /* Pods-focusFirebaseChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-focusFirebaseChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-focusFirebaseChallenge/Pods-focusFirebaseChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		F5B25D2B09572882242D4422 /* Pods_focusFirebaseChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_focusFirebaseChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8AF1DD40EF7A47E9FDD6F1 /* Pods_focusFirebaseChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		392DA7AF3AB242BBB4E18D8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D2B09572882242D4422 /* Pods_focusFirebaseChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BD7FDEF1F17F25400B74E20 = {
 			isa = PBXGroup;
 			children = (
 				8BD7FDFA1F17F25400B74E20 /* focusFirebaseChallenge */,
 				8BD7FDF91F17F25400B74E20 /* Products */,
+				C545A65FE715465FCF643EBF /* Pods */,
+				392DA7AF3AB242BBB4E18D8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +89,18 @@
 				8BD7FE021F17F25400B74E20 /* Assets.xcassets */,
 				8BD7FE041F17F25400B74E20 /* LaunchScreen.storyboard */,
 				8BD7FE071F17F25400B74E20 /* Info.plist */,
+				8BA4BCEC1F1AC68600A019BE /* GoogleService-Info.plist */,
 			);
 			path = focusFirebaseChallenge;
+			sourceTree = "<group>";
+		};
+		C545A65FE715465FCF643EBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62AF1E5922360C6FFD8E0A3E /* Pods-focusFirebaseChallenge.debug.xcconfig */,
+				E12C5009C294319D41A17384 /* Pods-focusFirebaseChallenge.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BD7FE0A1F17F25400B74E20 /* Build configuration list for PBXNativeTarget "focusFirebaseChallenge" */;
 			buildPhases = (
+				3834BBC661F38EAA48EA301D /* [CP] Check Pods Manifest.lock */,
 				8BD7FDF41F17F25400B74E20 /* Sources */,
 				8BD7FDF51F17F25400B74E20 /* Frameworks */,
 				8BD7FDF61F17F25400B74E20 /* Resources */,
+				42DC15A5EFBE3FD1561A5B12 /* [CP] Embed Pods Frameworks */,
+				BEEEC0B7C6DB83540CB0B549 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,10 +167,59 @@
 				8BD7FE061F17F25400B74E20 /* LaunchScreen.storyboard in Resources */,
 				8BD7FE031F17F25400B74E20 /* Assets.xcassets in Resources */,
 				8BD7FE011F17F25400B74E20 /* Main.storyboard in Resources */,
+				8BA4BCED1F1AC68600A019BE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3834BBC661F38EAA48EA301D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42DC15A5EFBE3FD1561A5B12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-focusFirebaseChallenge/Pods-focusFirebaseChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEEEC0B7C6DB83540CB0B549 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-focusFirebaseChallenge/Pods-focusFirebaseChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BD7FDF41F17F25400B74E20 /* Sources */ = {
@@ -287,28 +366,32 @@
 		};
 		8BD7FE0B1F17F25400B74E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AF1E5922360C6FFD8E0A3E /* Pods-focusFirebaseChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2UZ38CNUHD;
 				INFOPLIST_FILE = focusFirebaseChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhruvingajjar.focusFirebaseChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8BD7FE0C1F17F25400B74E20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12C5009C294319D41A17384 /* Pods-focusFirebaseChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2UZ38CNUHD;
 				INFOPLIST_FILE = focusFirebaseChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhruvingajjar.focusFirebaseChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
