@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jokes_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAc-hZ-lHJ">
+                                <rect key="frame" x="16" y="137" width="343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="UxB-fa-cSq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-bH-3Rd">
+                                <rect key="frame" x="157" y="393" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FNG-38-7St"/>
+                                    <constraint firstAttribute="width" constant="60" id="iQG-KG-OXD"/>
+                                </constraints>
+                                <state key="normal" image="if_Next_2_372913">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextJokeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oBu-TA-svE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8o-VP-Jul">
+                                <rect key="frame" x="150" y="461" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Kgv-9V-jRO"/>
+                                    <constraint firstAttribute="height" constant="75" id="b8D-cT-m8O"/>
+                                </constraints>
+                                <state key="normal" image="if_logo-share_350996">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qb3-Ew-NM4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91986876529999995" green="0.96621346470000002" blue="0.95113111419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TJE-bH-3Rd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ui-aF-Vmp"/>
+                            <constraint firstItem="BAc-hZ-lHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6AB-mE-RAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BAc-hZ-lHJ" secondAttribute="trailing" constant="16" id="G8D-fc-7re"/>
+                            <constraint firstItem="p8o-VP-Jul" firstAttribute="top" secondItem="TJE-bH-3Rd" secondAttribute="bottom" constant="8" id="M1L-6a-vCQ"/>
+                            <constraint firstItem="p8o-VP-Jul" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PrU-Kg-lcI"/>
+                            <constraint firstItem="BAc-hZ-lHJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="X4a-xT-VGu"/>
+                            <constraint firstItem="TJE-bH-3Rd" firstAttribute="top" secondItem="BAc-hZ-lHJ" secondAttribute="bottom" constant="106" id="hMw-bn-iKu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="jokeLabel" destination="BAc-hZ-lHJ" id="Bdm-lW-DJU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="if_Next_2_372913" width="128" height="128"/>
+        <image name="if_logo-share_350996" width="128" height="128"/>
+    </resources>
+</document>

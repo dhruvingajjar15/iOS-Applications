@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var images = [UIImageView]()
+    @objc var images = [UIImageView]()
 
     @IBOutlet var addGestureRecognizer: UISwipeGestureRecognizer!
     
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     //Gesture
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             

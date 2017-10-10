@@ -11,7 +11,7 @@ import Alamofire
 
 class ComposeVC: UIViewController, UITextFieldDelegate {
     
-    var testUser = User()
+    var testUser: UserManager?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,6 @@ class ComposeVC: UIViewController, UITextFieldDelegate {
                 //UserManager.userInstance.getUser
                 let results = response.result
                 if let dict = results.value as? Dictionary<String,AnyObject> {
-                    UserManager.userInstance.getUser
                     print(dict)
                     if let data = dict["data"] as? String {
                         print(data)
@@ -60,7 +59,7 @@ class ComposeVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
-    func hideKeyboard() {
+    @objc func hideKeyboard() {
         view.endEditing(true)
     }
 }

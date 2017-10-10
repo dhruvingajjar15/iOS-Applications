@@ -140,9 +140,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             alert.addAction(dismiss)
             self.present(alert, animated: true, completion: nil)
         }
-        
-        
-
     }
 
     
@@ -151,7 +148,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
-    func hideKeyboard() {
+    @objc func hideKeyboard() {
         view.endEditing(true)
     }
     
