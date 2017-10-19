@@ -11,15 +11,23 @@ import Alamofire
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var changeJokes: UISwitch!
     
     @IBOutlet weak var jokeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if jokeLabel.text == "Label" {
-            loadJokes()
-        }
+        loadGoodJokes()
     }
+    
+    
+    @IBAction func infoBtn(_ sender: UIButton) {
+        let alertMessage = "\nShare chuck norris jokes with your friends, family and even with enemies via Text Messages, Facebook Messenger, WhatsApp, Twitter and may more.\n\nTurn off explicit jokes by sliding button on top right.\n\nClick on arrow button for next joke."
+        let alertView = UIAlertController(title: "Chuck Norris Jokes Edition", message: alertMessage, preferredStyle: UIAlertControllerStyle.alert)
+        alertView.addAction(UIAlertAction(title: "Click here to continue jokes", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alertView, animated: true, completion: nil)
+    }
+    
     
     @IBAction func shareBtn(_ sender: UIButton) {
         let activityVC = UIActivityViewController(activityItems: [jokeLabel.text as Any], applicationActivities: nil)
@@ -39,7 +47,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextJokeBtn(_ sender: UIButton) {
-        loadJokes()
+        if changeJokes.isOn {
+            loadJokes()
+        } else {
+            loadGoodJokes()
+        }
+        
         self.view.backgroundColor = getRandomColor()
     }
     
@@ -47,14 +60,28 @@ class ViewController: UIViewController {
         Alamofire.request("http://api.icndb.com/jokes/random", method: .get).responseJSON { (response) in
             let results = response.result
             if let dict = results.value as? Dictionary<String,AnyObject> {
+                if let values = dict["value"] as? Dictionary<String,AnyObject>{
+                    if let jokes = values["joke"] as? String {
+                        let jokeText = jokes.replacingOccurrences(of: "&quot;", with: " ", options: .regularExpression)
+                        self.jokeLabel.text = jokeText.capitalized
+                    }
+                    
+                }
+            } 
+        }
+    }
+    
+    func loadGoodJokes() {
+        Alamofire.request("http://api.icndb.com/jokes/random?exclude=[explicit]", method: .get).responseJSON { (response) in
+            let results2 = response.result
+            if let dict = results2.value as? Dictionary<String,AnyObject> {
                 if let values = dict["value"] as? Dictionary<String,AnyObject> {
                     if let jokes = values["joke"] as? String {
-                        self.jokeLabel.text = jokes.capitalized
+                        let jokeText = jokes.replacingOccurrences(of: "&quot;", with: " ", options: .regularExpression)
+                        self.jokeLabel.text = jokeText.capitalized
                     }
                 }
             }
-            
-            
         }
     }
 }
