@@ -22,4 +22,4 @@ Focus Swift Challenge:- Created an application which contain a list of basketbal
 
 Firebase Database Example:- Created a simple firebase application that will save and retrieve data from firebase and will display on table view. The artist name and genre was given as an input from text field and on clicking the add artist button, the data will get stored on firebase database. When the tableview reloads it will display the saved data from firebase in the table view on the screen.
 
-Jokes App:- Created a Chuck Norris Joke application which displays all the Chuck Norris Jokes from the api. Added a share button to share jokes on different applications like Facebook Messenger, Text Message, WhatsApp and many more. Added a splash screen which will  get displayed for 3 seconds as soon as the app starts.
+Jokes App:- Created a Chuck Norris Joke application which displays all the Chuck Norris Jokes from the api. Added a share button to share jokes on different applications like Facebook Messenger, Text Message, WhatsApp and many more.Turn off explicit jokes also. Added a splash screen which will  get displayed for 3 seconds as soon as the app starts.
